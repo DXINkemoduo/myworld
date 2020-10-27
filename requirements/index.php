@@ -301,7 +301,7 @@ $lang=getPreferredLanguage();
 $viewFile=dirname(__FILE__)."/views/$lang/index.php";
 if(!is_file($viewFile))
 	$viewFile=dirname(__FILE__).'/views/index.php';
-
+echo 1;exit;
 renderFile($viewFile,array(
 	'requirements'=>$requirements,
 	'result'=>$result,
